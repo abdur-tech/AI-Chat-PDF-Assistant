@@ -1,0 +1,146 @@
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;    /* Remove default margin */
+    padding: 0;   /* Remove default padding */
+    overflow: hidden; /* Prevent page scroll */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 40px); /* Full height minus padding */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    overflow: hidden; /* Prevent container overflow */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.upload-label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+.upload-status-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.status-message {
+    margin: 0; /* Reset margin for inline layout */
+    color: #e74c3c;
+}
+
+.status-message.success {
+    color: #2ecc71;
+}
+
+.chat-container {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: flex-end;
+}
+
+.message {
+    margin: 10px 0;
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    white-space: pre-wrap; /* Ensures line breaks are preserved */
+}
+
+.message.user-message {
+    background-color: #3498db;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message.bot-message {
+    background-color: #dfe6e9;
+    color: #2c3e50;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.message-timestamp {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    text-align: right;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+}

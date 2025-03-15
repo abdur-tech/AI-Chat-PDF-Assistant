@@ -1,0 +1,5 @@
+flask
+flask-cors
+pymupdf  # PDF text extraction
+openai  # AI Q&A
+python-dotenv
