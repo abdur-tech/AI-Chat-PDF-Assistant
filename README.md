@@ -41,3 +41,4 @@ A simple AI chatbot that allows users to upload PDFs and interact via chat.
     Access the UI at:
     http://127.0.0.1:8000/home.html
 
+![alt text]({EFC52495-582A-4750-9896-E9F17F6C4771}.png)
