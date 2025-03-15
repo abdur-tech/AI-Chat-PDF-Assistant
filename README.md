@@ -39,4 +39,5 @@ A simple AI chatbot that allows users to upload PDFs and interact via chat.
 
     python -m http.server 8000
     Access the UI at:
-    http://127.0.0.1:8000
+    http://127.0.0.1:8000/home.html
+
