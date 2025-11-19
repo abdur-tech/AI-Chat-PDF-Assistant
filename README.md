@@ -1,10 +1,24 @@
 # AI-Chat-PDF-Assistant
-A simple AI chatbot that allows users to upload PDFs and interact via chat.
+A simple AI chatbot that lets users upload PDFs and interact with them via chat — now powered by FAISS for vector search and sentence-transformers for embeddings.
 
-## 🌟 Features
-- 📂 Upload PDFs and interact with AI
-- 💬 Chat with a bot in real-time
-- 🎨 Responsive UI using HTML, CSS, and JavaScript
+Features
+
+- Upload PDF files
+- Ask questions based on PDF content
+- Uses FAISS for vector similarity search
+- Uses sentence-transformers to generate embeddings
+- Implements a Retrieval-Augmented Generation (RAG) workflow
+- Simple frontend built with HTML, CSS, and JavaScript
+
+How It Works
+
+- Extract text from the uploaded PDF
+- Split the text into smaller chunks
+- Generate embeddings for each chunk
+- Store embeddings inside a FAISS index
+- Convert user questions into embeddings
+- Search FAISS for the closest matching chunks
+- Send retrieved chunks to the LLM to generate accurate answers
 
 ## 🚀 Setup Instructions
 
