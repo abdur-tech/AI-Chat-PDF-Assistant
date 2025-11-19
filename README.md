@@ -22,7 +22,7 @@ A simple AI chatbot that allows users to upload PDFs and interact via chat.
 
 4️⃣ Set Up Environment Variables
 
-    Create API key in https://openrouter.ai/google/gemma-3-12b-it:free
+    Create API key through https://openrouter.ai/google/gemma-3-12b-it:free 
     GET google gemma 3 12b LLM access key
 
     Create a .env file in the root directory and add:
